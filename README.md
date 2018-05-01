@@ -1,2 +1,0 @@
-# BATTERY
-Battery checker

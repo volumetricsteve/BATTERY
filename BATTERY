@@ -1,0 +1,5 @@
+BAT=/sys/class/power_supply/BAT0
+cat $BAT/status
+BAT_FULL=$(cat $BAT/energy_full)
+BAT_NOW=$(cat $BAT/energy_now)
+echo "scale=2; $BAT_NOW / $BAT_FULL" | bc -s
